@@ -1,0 +1,106 @@
+/* FRAME 1 */
+#paws.frame1 {
+	background: linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat;
+	background-size: 18px 18px;
+	background-position: 4px 6px, 10px 0, 34px 0, 40px 6px, 94px 0px, 101px 6px, 125px 0px, 131px 6px;
+}
+
+#paws.frame1:before {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(#999, #999) no-repeat,
+				linear-gradient(#999, #999) no-repeat,
+				linear-gradient(#999, #999) no-repeat,
+				linear-gradient(#999, #999) no-repeat,
+				linear-gradient(#999, #999) no-repeat;
+	background-size: 12px 12px, 12px 12px, 12px 12px, 12px 12px, 6px 6px;
+	background-position: 10px 6px, 40px 6px, 101px 6px, 131px 6px, 22px 6px;
+}
+
+/* FRAMES 2 AND 4 */
+#paws.frame2, #paws.frame4 {
+	background: linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat;
+	background-size: 18px 18px;
+	background-position: 10px 6px, 16px 0, 40px 0, 46px 6px, 95px 0, 101px 6px, 125px 0, 131px 6px;
+}
+
+#paws.frame2:before, #paws.frame4:before {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(#999, #999) no-repeat,
+				linear-gradient(#999, #999) no-repeat,
+				linear-gradient(#999, #999) no-repeat,
+				linear-gradient(#999, #999) no-repeat;
+	background-size: 12px 12px;
+	background-position: 16px 6px, 46px 6px, 101px 6px, 131px 6px;
+}
+
+/* FRAME 3 */
+#paws.frame3 {
+	background: linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat;
+	background-size: 18px 18px;
+	background-position: 16px 6px, 22px 0px, 46px 0px, 52px 6px, 100px 0px, 106px 6px, 131px 0px, 137px 6px;
+}
+
+#paws.frame3:before {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(#999, #999) no-repeat,
+				linear-gradient(#999, #999) no-repeat,
+				linear-gradient(#999, #999) no-repeat,
+				linear-gradient(#999, #999) no-repeat;
+	background-size: 12px 12px;
+	background-position: 22px 6px, 52px 6px, 106px 6px, 137px 6px;
+}
+
+/* FRAME 5 AND 6 */
+#paws.frame5, #paws.frame6 {
+	background: linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat;
+	background-size: 18px 18px;
+	background-position: 4px 6px, 10px 0, 34px 0, 40px 6px, 94px 0px, 101px 6px, 125px 0px, 131px 6px;
+}
+
+#paws.frame5:before, #paws.frame6:before {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(#999, #999) no-repeat,
+				linear-gradient(#999, #999) no-repeat,
+				linear-gradient(#999, #999) no-repeat,
+				linear-gradient(#999, #999) no-repeat,
+				linear-gradient(#999, #999) no-repeat;
+	background-size: 12px 12px;
+	background-position: 10px 6px, 16px 0, 40px 6px, 101px 6px, 131px 6px;
+}
+
+/* FRAME 6 */
+#paws.frame6 {
+	background-position: 4px 6px, 10px 0, 40px 0, 34px 6px, 101px 0px, 95px 6px, 125px 0px, 131px 6px;
+}

@@ -1,0 +1,130 @@
+/* FRAME 1 */
+.sparks.frame1 {
+	background: linear-gradient(white, white) no-repeat;
+	background-size: 6px 6px;
+	background-position: 17px 17px;
+}
+
+/* FRAME 2 */
+.sparks.frame2 {
+	background: linear-gradient(white, white) no-repeat,
+				linear-gradient(white, white) no-repeat,
+				linear-gradient(white, white) no-repeat,
+				linear-gradient(white, white) no-repeat;
+				
+	background-size: 6px 6px;
+	background-position: 17px 0, 34px 17px, 17px 34px, 0 17px;
+}
+
+/* FRAME 3 */
+.sparks.frame3 {
+	background: linear-gradient(white, white) no-repeat,
+				linear-gradient(white, white) no-repeat,
+				linear-gradient(white, white) no-repeat,
+				linear-gradient(white, white) no-repeat;
+				
+	background-size: 6px 6px;
+	background-position: 17px 0, 34px 17px, 17px 34px, 0 17px;
+}
+
+.sparks.frame3:after {
+	content: '';
+	display: block;
+	position: relative;
+	width: 28px;
+	height: 28px;
+	margin: 0 auto;
+	top: 6px;
+	
+	background: linear-gradient(white, white) no-repeat,
+				linear-gradient(white, white) no-repeat,
+				linear-gradient(white, white) no-repeat,
+				linear-gradient(white, white) no-repeat;
+				
+	background-size: 5px 5px;
+	background-position: 0 0, 23px 0, 23px 23px, 0 23px;
+}
+
+/* FRAME 4 */
+.sparks.frame4 {	
+	background: linear-gradient(white, white) no-repeat;
+	background-size: 6px 6px;
+	background-position: 17px 17px;
+}
+
+.sparks.frame4:after, .sparks.frame4:before {
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.sparks.frame4:after {
+	background: linear-gradient(white, white) no-repeat,
+				linear-gradient(white, white) no-repeat;
+				
+	background-size: 6px 11px;
+	background-position: 17px 0, 17px 29px;
+}
+
+.sparks.frame4:before {	
+	background: linear-gradient(white, white) no-repeat,
+				linear-gradient(white, white) no-repeat;
+				
+	background-size: 11px 6px;
+	background-position: 0 17px, 29px 17px;
+}
+
+/* FRAME 5 */
+.sparks.frame5:after, .sparks.frame5:before {
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.sparks.frame5:after {
+	background: linear-gradient(white, white) no-repeat,
+				linear-gradient(white, white) no-repeat;
+				
+	background-size: 6px 11px;
+	background-position: 17px 6px, 17px 23px;
+}
+
+.sparks.frame5:before {	
+	background: linear-gradient(white, white) no-repeat,
+				linear-gradient(white, white) no-repeat;
+				
+	background-size: 11px 6px;
+	background-position: 6px 17px, 23px 17px;
+}
+
+/* FRAME 6 */
+.sparks.frame6:after, .sparks.frame6:before {
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.sparks.frame6:after {
+	background: linear-gradient(white, white) no-repeat,
+				linear-gradient(white, white) no-repeat;
+				
+	background-size: 5px 6px;
+	background-position: 17px 11px, 17px 22px;
+}
+
+.sparks.frame6:before {	
+	background: linear-gradient(white, white) no-repeat,
+				linear-gradient(white, white) no-repeat;
+				
+	background-size: 6px 5px;
+	background-position: 11px 17px, 22px 17px;
+}

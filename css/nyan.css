@@ -1,0 +1,230 @@
+html, body {
+	width:100%;
+	height:100%;
+	margin: 0;
+	padding: 0;
+	background: #036;
+	overflow: hidden;
+}
+
+body > div {
+	width: 100%;
+	height: 400px;
+	position: relative;
+}
+
+/* nyan cat! */
+#nyan-cat {
+	position: absolute;
+	width: 194px;
+	height: 122px;
+	top: 50%;
+	left: 50%;
+	margin-top: -54px;
+	margin-left: -97px;
+}
+
+#nyan-cat.frame1, #nyan-cat.frame2 {
+	margin-top: -60px;
+}
+
+/* pop-tarts body */
+#pop-tarts-body {
+	border: solid black;
+	border-width: 6px 0;
+	width: 97px;
+	height: 92px;
+	position: absolute;
+	left: 52px;
+	top: 0;
+}
+
+#pop-tarts-body:after {
+	content: '';
+	border: solid black;
+	border-width: 0 6px;
+	width: 109px;
+	height: 80px;
+	position: absolute;
+	top: 6px;
+	left: -12px;
+}
+
+#pop-tarts-body:before {
+	content: '';
+	position: absolute;
+	left: -6px;
+	top: 0;
+	width: 109px;
+	height: 92px;
+	
+	background: linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat;
+	background-color: #fc9;
+	background-size: 6px 6px;
+	background-position: 0 0, 103px 0, 0 86px, 103px 86px;	
+}
+
+#pop-tarts-body-cream {
+	position: absolute;
+	width: 100%;
+	height: 80px;
+	top: 6px;
+	left: 0;
+	background: linear-gradient(#f39, #f39) no-repeat,
+				linear-gradient(#f39, #f39) no-repeat,
+				linear-gradient(#f39, #f39) no-repeat,
+				linear-gradient(#f39, #f39) no-repeat,
+				linear-gradient(#f39, #f39) no-repeat,
+				linear-gradient(#f39, #f39) no-repeat,
+				linear-gradient(#f39, #f39) no-repeat,
+				linear-gradient(#f39, #f39) no-repeat,
+				linear-gradient(#f39, #f39) no-repeat,
+				linear-gradient(#f39, #f39) no-repeat;
+				
+	background-color: #f9f;
+	background-size: 6px 6px;
+	background-position: 12px 12px, 40px 6px, 58px 6px, 35px 29px, 80px 18px, 18px 40px, 40px 46px, 6px 52px, 29px 63px;
+}
+
+#pop-tarts-body-cream:before, #pop-tarts-body-cream:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+
+#pop-tarts-body-cream:before {
+	background: linear-gradient(#fc9, #fc9) no-repeat,
+				linear-gradient(#fc9, #fc9) no-repeat,
+				linear-gradient(#fc9, #fc9) no-repeat,
+				linear-gradient(#fc9, #fc9) no-repeat;
+	background-size: 12px 6px;
+	background-position: 0 0, 85px 0, 0 74px, 85px 74px;
+}
+
+#pop-tarts-body-cream:after {
+	background: linear-gradient(#fc9, #fc9) no-repeat,
+				linear-gradient(#fc9, #fc9) no-repeat,
+				linear-gradient(#fc9, #fc9) no-repeat,
+				linear-gradient(#fc9, #fc9) no-repeat;
+	background-size: 6px 12px;
+	background-position: 0 0, 91px 0, 0 68px, 91px 68px;
+}
+
+/* pseudo elems */
+#tail:before, #nyan-cat:before, #paws:before {
+	content: '';
+	position: absolute;
+}
+
+/* tail */
+#tail {
+	width: 40px;
+	height: 54px;
+	position: absolute;
+	left: 0;
+	top: 40px;
+}
+
+/* paws */
+#paws {
+	width: 156px;
+	height: 30px;
+	position: absolute;
+	bottom: 0;
+	left: 24px;
+}
+
+/* sparks */
+.sparks-combo {
+	position: absolute;
+}
+
+.sparks {
+	position: relative;
+	width: 40px;
+	height: 40px;
+	background-color: transparent;
+}
+
+.sparks:nth-child(1) {
+	top: 0;
+	left: 20px;
+}
+
+.sparks:nth-child(2) {
+	top: 40px;
+	left: 170px;
+}
+
+.sparks:nth-child(3) {
+	top: 100px;
+	left: 320px;
+}
+
+.sparks:nth-child(4) {
+	top: 150px;
+	left: 200px;
+}
+
+/* rainbow */
+#rainbow {
+	background: none;
+	height: 108px;
+	width: 50%;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	margin-top: -54px;
+}
+
+.wave-combo {
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 102px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.top {top: 0;}
+
+.bottom {bottom: 0;}
+
+.wave {
+	float: left;
+	height: 100%;
+	width: 92px;
+	background-size: 46px 100%;
+	background-repeat: no-repeat;
+	background-position: 0 0, 46px 0;
+}
+
+#wave-1 .wave {
+	background-image: linear-gradient(to bottom, transparent, transparent),
+	
+					  linear-gradient(to bottom, 
+					  #f00 0px,  #f00 17px,
+					  #f90 17px, #f90 34px,
+					  #ff0 34px, #ff0 51px,
+					  #3f0 51px, #3f0 68px,
+					  #09f 68px, #09f 85px,
+					  #63f 85px, #63f 102px);
+}
+
+#wave-2 .wave {
+	background-image: linear-gradient(to bottom, 
+					  #f00 0px,  #f00 17px,
+					  #f90 17px, #f90 34px,
+					  #ff0 34px, #ff0 51px,
+					  #3f0 51px, #3f0 68px,
+					  #09f 68px, #09f 85px,
+					  #63f 85px, #63f 102px),
+					  
+					  linear-gradient(to bottom, transparent, transparent);
+}
