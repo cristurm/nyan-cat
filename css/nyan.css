@@ -89,37 +89,104 @@ body > div {
 	background-position: 12px 12px, 40px 6px, 58px 6px, 35px 29px, 80px 18px, 18px 40px, 40px 46px, 6px 52px, 29px 63px;
 }
 
-#pop-tarts-body-cream:before, #pop-tarts-body-cream:after {
+#pop-tarts-body-cream:before {
 	content: '';
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	left: 0;
 	top: 0;
-}
-
-#pop-tarts-body-cream:before {
+	
 	background: linear-gradient(#fc9, #fc9) no-repeat,
 				linear-gradient(#fc9, #fc9) no-repeat,
 				linear-gradient(#fc9, #fc9) no-repeat,
-				linear-gradient(#fc9, #fc9) no-repeat;
-	background-size: 12px 6px;
-	background-position: 0 0, 85px 0, 0 74px, 85px 74px;
-}
-
-#pop-tarts-body-cream:after {
-	background: linear-gradient(#fc9, #fc9) no-repeat,
+				linear-gradient(#fc9, #fc9) no-repeat,
+				linear-gradient(#fc9, #fc9) no-repeat,
 				linear-gradient(#fc9, #fc9) no-repeat,
 				linear-gradient(#fc9, #fc9) no-repeat,
 				linear-gradient(#fc9, #fc9) no-repeat;
-	background-size: 6px 12px;
-	background-position: 0 0, 91px 0, 0 68px, 91px 68px;
+	background-size: 12px 6px, 12px 6px, 12px 6px, 12px 6px, 6px 12px, 6px 12px, 6px 12px, 6px 12px;
+	background-position: 0 0, 85px 0, 0 74px, 85px 74px, 0 0, 91px 0, 0 68px, 91px 68px;
 }
 
 /* pseudo elems */
-#tail:before, #nyan-cat:before, #paws:before {
+#head:before, #head:after, #tail:before, #nyan-cat:before, #paws:before, #face:before {
 	content: '';
 	position: absolute;
+}
+
+/* head */
+#head {
+	width: 80px;
+	height: 30px;
+	border: solid black;
+	border-width: 0 6px;
+	background: #999;
+	position: absolute;
+}
+
+/* #head:before = left ear | #head:after = right ear */
+#head:before, #head:after {
+	width: 40px;
+	height: 30px;
+	top: -30px;
+	background: linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat,
+				linear-gradient(#999, #999) no-repeat,
+				linear-gradient(#999, #999) no-repeat,
+				linear-gradient(#999, #999) no-repeat,
+				linear-gradient(#999, #999) no-repeat;
+	background-size: 6px 24px, 12px 6px, 12px 6px, 6px 6px, 6px 6px, 12px 30px, 12px 12px, 12px 6px, 6px 6px;
+	background-position: 0 6px, 6px 0, 30px 18px, 18px 6px, 24px 12px, 6px 6px, 18px 18px, 30px 24px, 18px 12px;
+}
+
+#head:after {
+	right: 0;
+	transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+}
+
+#face {
+	width: 80px;
+	height: 100%;
+	position: absolute;
+	top: 6px;
+	
+	background: linear-gradient(white, white) no-repeat,
+				linear-gradient(white, white) no-repeat,
+				linear-gradient(#f99, #f99) no-repeat,
+				linear-gradient(#f99, #f99) no-repeat,
+				linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat;
+
+	background-size: 6px 6px, 6px 6px, 12px 12px, 12px 12px, 12px 12px, 12px 12px, 6px 6px, 6px 6px, 6px 6px, 6px 6px;
+	background-position: 17px 0, 56px 0, 5px 12px, 68px 12px, 17px 0, 56px 0, 42px 6px, 23px 18px, 40px 18px, 56px 18px;
+}
+
+/* #face:before = chin */
+#face:before {
+	bottom: -12px;
+	width: 100%;
+	height: 18px;
+	
+	background: linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat,
+				linear-gradient(#999, #999) no-repeat,
+				linear-gradient(#999, #999) no-repeat;
+	
+	background-size: 6px 6px, 6px 6px, 6px 6px, 6px 6px, 56px 6px, 39px 6px, 68px 6px, 56px 6px;
+	background-position: 0 0, 6px 6px, 74px 0, 68px 6px, 12px 12px, 23px 0, 6px 0, 12px 6px;
 }
 
 /* tail */

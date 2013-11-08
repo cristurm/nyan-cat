@@ -1,5 +1,5 @@
 /* FRAME 1 */
-#tail.frame1 {
+.frame1 #tail {
 	background: linear-gradient(black, black) no-repeat,
 				linear-gradient(black, black) no-repeat,
 				linear-gradient(black, black) no-repeat,
@@ -9,7 +9,7 @@
 	background-position: 6px 0, 11px 6px, 17px 11px, 23px 17px, 34px 23px;
 }
 
-#tail.frame1:before {
+.frame1 #tail:before {
 	left: 11px;
 	top: 6px;
 	width: 29px;
@@ -23,7 +23,7 @@
 }
 
 /* FRAMES 2 AND 6 */
-#tail.frame2, #tail.frame6 {
+.frame2 #tail, .frame6 #tail {
 	background: linear-gradient(black, black) no-repeat,
 				linear-gradient(black, black) no-repeat,
 				linear-gradient(black, black) no-repeat,
@@ -32,7 +32,7 @@
 	background-position: 12px 6px, 18px 12px, 29px 17px, 6px 12px;
 }
 
-#tail.frame2:before, #tail.frame6:before {
+.frame2 #tail:before, .frame6 #tail:before {
 	width: 28px;
 	height: 23px;
 	left: 12px;
@@ -47,7 +47,7 @@
 }
 
 /* FRAME 3 */
-#tail.frame3 {
+.frame3 #tail {
 	background: linear-gradient(black, black) no-repeat,
 				linear-gradient(black, black) no-repeat,
 				linear-gradient(black, black) no-repeat,
@@ -56,7 +56,7 @@
 	background-position: 16px 24px, 4px 30px, 10px 36px, 34px 18px;
 }
 
-#tail.frame3:before {
+.frame3 #tail:before {
 	width: 30px;
 	height: 12px;
 	top: 30px;
@@ -68,7 +68,7 @@
 }
 
 /* FRAME 4 */
-#tail.frame4 {
+.frame4 #tail {
 	background: linear-gradient(black, black) no-repeat,
 				linear-gradient(black, black) no-repeat,
 				linear-gradient(black, black) no-repeat,
@@ -77,7 +77,7 @@
 	background-position: 28px 18px, 16px 24px, 10px 30px, 4px 36px;
 }
 
-#tail.frame4:before {
+.frame4 #tail:before {
 	width: 30px;
 	height: 24px;
 	top: 24px;
@@ -90,7 +90,7 @@
 }
 
 /* FRAME 5 */
-#tail.frame5 {
+.frame5 #tail {
 	background: linear-gradient(black, black) no-repeat,
 				linear-gradient(black, black) no-repeat,
 				linear-gradient(black, black) no-repeat,
@@ -100,7 +100,7 @@
 	background-position: 6px 6px, 12px 12px, 0 12px, 36px 12px, 28px 30px;
 }
 
-#tail.frame5:before {
+.frame5 #tail:before {
 	width: 34px;
 	height: 18px;
 	top: 12px;

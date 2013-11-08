@@ -1,0 +1,17 @@
+/* FRAME 1 AND 5 */
+.frame1 #head, .frame5 #head {
+	bottom: 36px;
+	right: 0;
+}
+
+/* FRAMES 2 AND 3 AND 4 */
+.frame2 #head, .frame3 #head, .frame4 #head {
+	bottom: 36px;
+	right: -6px;
+}
+
+/* FRAME 6 */
+.frame6 #head {
+	bottom: 42px;
+	right: 0;
+}
