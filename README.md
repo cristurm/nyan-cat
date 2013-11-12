@@ -3,19 +3,28 @@ nyan-cat
 
 Nyan Cat made with HTML5+CSS3+JavaScript
 
-<h2>Goals</h2>
+Goals:
+------
 
-<ol>
-<li>My main goal with this project is to recreate the Nyan Cat we love using nothing but HTML and CSS3 (HTML5 audio for the background music).</li>
-<li>JavaScript is used mainly to cycle the element classes and duplicate some stuff in order to cover the entire screen.</li>
-<li>MUST be responsive.</li>
-<li>I want it to look exactly like the original Nyan Cat.</li>
-</ol>
+1. My main goal with this project is to recreate the Nyan Cat we love using nothing but HTML and CSS3 (HTML5 audio for the background music).
+2. JavaScript is used with jQuery lib mainly to cycle element classes and duplicate some stuff in order to cover the entire screen.
+3. MUST be responsive.
+4. I want it to look exactly like the original Nyan Cat.
 
-<h2>Why not use CSS3 Transitions/Animations?</h2>
+To Do List:
+-----------
+
+- [] Fix rainow glitch on various resolutions
+- [] Add song (with loop)
+- [] Improve Performance
+
+
+Why not use CSS3 Transitions/Animations?
+----------------------------------------
 
 Cause they suck for what I wanna do, at least as far as I know, I can't create frames without a smooth transition between them, and that does not look like Nyan Cat at all.
 
-<h2>This sucks, you suck, I can do it better and faster and cooler!</h2>
+This sucks, you suck, I can do it better and faster and cooler!
+---------------------------------------------------------------
 
 Please do so, just don't forget to teach me after doing it, cause I wanna know it too!
