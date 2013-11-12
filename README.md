@@ -14,9 +14,9 @@ Goals:
 To Do List:
 -----------
 
-- Fix rainow glitch on various resolutions
-- Add song (with loop)
-- Improve Performance
+- Fix rainow glitch on various resolutions (ok).
+- Add song (with loop).
+- Improve Performance.
 
 
 Why not use CSS3 Transitions/Animations?

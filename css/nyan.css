@@ -246,8 +246,9 @@ body > div {
 	width: 50%;
 	position: absolute;
 	top: 50%;
-	left: 0;
+	right: 50%;
 	margin-top: -54px;
+	margin-right: 20px;
 }
 
 .wave-combo {
@@ -264,7 +265,7 @@ body > div {
 .bottom {bottom: 0;}
 
 .wave {
-	float: left;
+	float: right;
 	height: 100%;
 	width: 92px;
 	background-size: 46px 100%;

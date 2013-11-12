@@ -15,7 +15,7 @@ var Rainbow = function () {
 		initWaveCombos: function (_combos) {
 			_combos.each(function () {
 				var childWave = $(this).children('.wave'),
-					wavesAmount = Math.floor($(this).width() / childWave.width());
+					wavesAmount = Math.ceil($(this).width() / childWave.width());
 					
 				for (var a = 1; a < wavesAmount; a += 1) {
 					$(this).append(childWave.clone());
