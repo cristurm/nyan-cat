@@ -34,5 +34,5 @@ Please do so, just don't forget to teach me after doing it, cause I wanna know i
 Credits:
 --------
 
-[GIF image used as a reference to recreate each frame from prguitarman](http://www.prguitarman.com/?id=348)
-[Song downloaded from momolabo.lolipop.jp](http://momolabo.lolipop.jp/nyancatsong/Nyan/Nyanyanyanyanyanyanya%21.html)
+- [GIF image used as a reference to recreate each frame from prguitarman](http://www.prguitarman.com/?id=348)
+- [Song downloaded from momolabo.lolipop.jp](http://momolabo.lolipop.jp/nyancatsong/Nyan/Nyanyanyanyanyanyanya%21.html)
