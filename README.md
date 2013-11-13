@@ -2,6 +2,7 @@ nyan-cat
 ========
 
 [DEMO HERE](http://cristurm.github.io/nyan-cat/)
+
 Nyan Cat made with HTML5+CSS3+JavaScript.
 
 Goals:
@@ -15,8 +16,8 @@ Goals:
 To Do List:
 -----------
 
-~~- Fix rainow glitch on various resolutions.~~
-~~- Add song (with loop).~~
+- ~~Fix rainow glitch on various resolutions.~~
+- ~~Add song (with loop).~~
 - Improve Performance.
 
 
