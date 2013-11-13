@@ -1,7 +1,8 @@
 nyan-cat
 ========
 
-Nyan Cat made with HTML5+CSS3+JavaScript
+[DEMO HERE](http://cristurm.github.io/nyan-cat/)
+Nyan Cat made with HTML5+CSS3+JavaScript.
 
 Goals:
 ------
@@ -14,8 +15,8 @@ Goals:
 To Do List:
 -----------
 
-- Fix rainow glitch on various resolutions (ok).
-- Add song (with loop).
+~~- Fix rainow glitch on various resolutions.~~
+~~- Add song (with loop).~~
 - Improve Performance.
 
 
@@ -28,3 +29,9 @@ This sucks, you suck, I can do it better and faster and cooler!
 ---------------------------------------------------------------
 
 Please do so, just don't forget to teach me after doing it, cause I wanna know it too!
+
+Credits:
+--------
+
+[GIF image used as a reference to recreate each frame from prguitarman](http://www.prguitarman.com/?id=348)
+[Song downloaded from momolabo.lolipop.jp](http://momolabo.lolipop.jp/nyancatsong/Nyan/Nyanyanyanyanyanyanya%21.html)
