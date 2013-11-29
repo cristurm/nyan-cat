@@ -1,3 +1,5 @@
+![Nyan Cat](http://cristurm.com/wp-content/uploads/2013/11/nyan-cat1.png)
+
 nyan-cat
 ========
 
