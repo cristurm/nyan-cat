@@ -7,10 +7,47 @@ html, body {
 	overflow: hidden;
 }
 
+body {
+	font: 13px/1.4 Helvetica,arial,freesans,clean,sans-serif,"Segoe UI Emoji","Segoe UI Symbol";
+}
+
 body > div {
 	width: 100%;
 	height: 400px;
 	position: relative;
+}
+
+.repo {
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: black;
+	background: white;
+	padding: 6px 6px;
+	outline: none;
+}
+
+.repo i {
+	float: left;
+	cursor: pointer;
+
+}
+
+.repo span {
+	float: left;
+	padding-left: 0;
+	line-height: 32px;
+	overflow: hidden;
+	width: 0;
+	max-width: 0;
+	white-space: nowrap;
+	transition: max-width 1s;
+}
+
+.repo:hover span {
+	padding-left: 6px;
+	width: auto;
+	max-width: 200px;
 }
 
 /* nyan cat! */
@@ -57,14 +94,14 @@ body > div {
 	top: 0;
 	width: 109px;
 	height: 92px;
-	
+
 	background: linear-gradient(black, black) no-repeat,
 				linear-gradient(black, black) no-repeat,
 				linear-gradient(black, black) no-repeat,
 				linear-gradient(black, black) no-repeat;
 	background-color: #fc9;
 	background-size: 6px 6px;
-	background-position: 0 0, 103px 0, 0 86px, 103px 86px;	
+	background-position: 0 0, 103px 0, 0 86px, 103px 86px;
 }
 
 #pop-tarts-body-cream {
@@ -83,7 +120,7 @@ body > div {
 				linear-gradient(#f39, #f39) no-repeat,
 				linear-gradient(#f39, #f39) no-repeat,
 				linear-gradient(#f39, #f39) no-repeat;
-				
+
 	background-color: #f9f;
 	background-size: 6px 6px;
 	background-position: 12px 12px, 40px 6px, 58px 6px, 35px 29px, 80px 18px, 18px 40px, 40px 46px, 6px 52px, 29px 63px;
@@ -96,7 +133,7 @@ body > div {
 	height: 100%;
 	left: 0;
 	top: 0;
-	
+
 	background: linear-gradient(#fc9, #fc9) no-repeat,
 				linear-gradient(#fc9, #fc9) no-repeat,
 				linear-gradient(#fc9, #fc9) no-repeat,
@@ -154,7 +191,7 @@ body > div {
 	height: 100%;
 	position: absolute;
 	top: 6px;
-	
+
 	background: linear-gradient(white, white) no-repeat,
 				linear-gradient(white, white) no-repeat,
 				linear-gradient(#f99, #f99) no-repeat,
@@ -175,7 +212,7 @@ body > div {
 	bottom: -12px;
 	width: 100%;
 	height: 18px;
-	
+
 	background: linear-gradient(black, black) no-repeat,
 				linear-gradient(black, black) no-repeat,
 				linear-gradient(black, black) no-repeat,
@@ -184,7 +221,7 @@ body > div {
 				linear-gradient(black, black) no-repeat,
 				linear-gradient(#999, #999) no-repeat,
 				linear-gradient(#999, #999) no-repeat;
-	
+
 	background-size: 6px 6px, 6px 6px, 6px 6px, 6px 6px, 56px 6px, 39px 6px, 68px 6px, 56px 6px;
 	background-position: 0 0, 6px 6px, 74px 0, 68px 6px, 12px 12px, 23px 0, 6px 0, 12px 6px;
 }
@@ -275,8 +312,8 @@ body > div {
 
 #wave-1 .wave {
 	background-image: linear-gradient(to bottom, transparent, transparent),
-	
-					  linear-gradient(to bottom, 
+
+					  linear-gradient(to bottom,
 					  #f00 0px,  #f00 17px,
 					  #f90 17px, #f90 34px,
 					  #ff0 34px, #ff0 51px,
@@ -286,13 +323,13 @@ body > div {
 }
 
 #wave-2 .wave {
-	background-image: linear-gradient(to bottom, 
+	background-image: linear-gradient(to bottom,
 					  #f00 0px,  #f00 17px,
 					  #f90 17px, #f90 34px,
 					  #ff0 34px, #ff0 51px,
 					  #3f0 51px, #3f0 68px,
 					  #09f 68px, #09f 85px,
 					  #63f 85px, #63f 102px),
-					  
+
 					  linear-gradient(to bottom, transparent, transparent);
 }
