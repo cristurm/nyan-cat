@@ -244,36 +244,9 @@ body > div {
 	left: 24px;
 }
 
-/* sparks */
+/* spark */
 .sparks-combo {
 	position: absolute;
-}
-
-.sparks {
-	position: relative;
-	width: 40px;
-	height: 40px;
-	background-color: transparent;
-}
-
-.sparks:nth-child(1) {
-	top: 0;
-	left: 20px;
-}
-
-.sparks:nth-child(2) {
-	top: 40px;
-	left: 170px;
-}
-
-.sparks:nth-child(3) {
-	top: 100px;
-	left: 320px;
-}
-
-.sparks:nth-child(4) {
-	top: 150px;
-	left: 200px;
 }
 
 /* rainbow */
