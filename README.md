@@ -18,12 +18,12 @@ Goals:
 To Do List:
 -----------
 
-- [x] Fix rainow glitch on various resolutions.
-- [x] Add song (with loop).
-- [ ]Improve Performance.
-- [x]Remove JS Sparks
-- [x]Remove JS Rainbow
-- [ ]Remove JS Nyan Cat
+- [x] Fix rainow glitch on various resolutions
+- [x] Add song (with loop)
+- [ ] Improve Performance
+- [x] Remove JS Sparks
+- [x] Remove JS Rainbow
+- [ ] Remove JS Nyan Cat
 
 Credits:
 --------
