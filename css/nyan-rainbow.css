@@ -5,6 +5,7 @@
 	position: absolute;
 	top: 50%;
 	right: 50%;
+	margin-right: 45px;
 }
 
 .hot:after, .hot:before, .cold:after, .cold:before {
