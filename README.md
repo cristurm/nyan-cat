@@ -18,16 +18,12 @@ Goals:
 To Do List:
 -----------
 
-- ~~Fix rainow glitch on various resolutions.~~
-- ~~Add song (with loop).~~
-- Improve Performance.
-- Remove JS for frames cycling
-
-
-Why not use CSS3 Transitions/Animations?
-----------------------------------------
-
-Cause they didn't work well with background-gradoents at the momtent I was making it.
+- [x] Fix rainow glitch on various resolutions.
+- [x] Add song (with loop).
+- [ ]Improve Performance.
+- [x]Remove JS Sparks
+- [x]Remove JS Rainbow
+- [ ]Remove JS Nyan Cat
 
 Credits:
 --------
