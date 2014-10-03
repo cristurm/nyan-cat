@@ -1,7 +1,6 @@
 var Sparks = function () {
 	return {
 		init: function () {
-			this.framesAmount = 6;
 			this.initSparksCombos($('.sparks-combo'));
 			this.allCombos = $('.sparks-combo');
 		},

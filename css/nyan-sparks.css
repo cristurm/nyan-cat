@@ -1,3 +1,7 @@
+.sparks-combo {
+	position: absolute;
+}
+
 .spark {
 	background: linear-gradient(white, white) no-repeat,
 		linear-gradient(white, white) no-repeat,
@@ -24,21 +28,21 @@
 	top: 40px;
 	left: 170px;
 
-	animation: sparkly 700ms 100ms steps(1) infinite both;
+	animation: sparkly 700ms 200ms steps(1) infinite both;
 }
 
 .spark:nth-child(3) {
 	top: 100px;
 	left: 320px;
 
-	animation: sparkly 700ms 300ms steps(1) infinite both;
+	animation: sparkly 700ms 400ms steps(1) infinite both;
 }
 
 .spark:nth-child(4) {
 	top: 150px;
 	left: 200px;
 
-	animation: sparkly 700ms 500ms steps(1) infinite both;
+	animation: sparkly 700ms 600ms steps(1) infinite both;
 }
 
 @keyframes sparkly {
