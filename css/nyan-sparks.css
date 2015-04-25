@@ -15,12 +15,15 @@
 	width: 40px;
 	height: 40px;
 	background-color: transparent;
+	background-size: 6px 6px, 6px 6px, 6px 6px, 6px 6px, 0 0, 0 0, 0 0, 0 0;
+	background-position: 17px 17px, 17px 17px, 17px 17px, 17px 17px, 0 0, 0 0, 0 0, 0 0;
 }
 
 .spark:nth-child(1) {
 	top: 0;
 	left: 20px;
 
+	-webkit-animation: sparkly 700ms 0ms steps(1) infinite both;
 	animation: sparkly 700ms 0ms steps(1) infinite both;
 }
 
@@ -28,6 +31,7 @@
 	top: 40px;
 	left: 170px;
 
+	-webkit-animation: sparkly 700ms 200ms steps(1) infinite both;
 	animation: sparkly 700ms 200ms steps(1) infinite both;
 }
 
@@ -35,6 +39,7 @@
 	top: 100px;
 	left: 320px;
 
+	-webkit-animation: sparkly 700ms 400ms steps(1) infinite both;
 	animation: sparkly 700ms 400ms steps(1) infinite both;
 }
 
@@ -42,7 +47,45 @@
 	top: 150px;
 	left: 200px;
 
+	-webkit-animation: sparkly 700ms 600ms steps(1) infinite both;
 	animation: sparkly 700ms 600ms steps(1) infinite both;
+}
+
+@-webkit-keyframes sparkly {
+	0% {
+		background-size: 6px 6px, 6px 6px, 6px 6px, 6px 6px, 0 0, 0 0, 0 0, 0 0;
+		background-position: 17px 17px, 17px 17px, 17px 17px, 17px 17px, 0 0, 0 0, 0 0, 0 0;
+	}
+
+	16% {
+		background-size: 6px 6px, 6px 6px, 6px 6px, 6px 6px, 0 0, 0 0, 0 0, 0 0;
+		background-position: 17px 0, 34px 17px, 17px 34px, 0 17px, 0 0, 0 0, 0 0, 0 0;
+	}
+
+	33% {
+		background-size: 6px 6px, 6px 6px, 6px 6px, 6px 6px, 5px 5px, 5px 5px, 5px 5px, 5px 5px;
+		background-position: 17px 0, 34px 17px, 17px 34px, 0 17px, 6px 6px, 29px 6px, 29px 29px, 6px 29px;
+	}
+
+	50% {
+		background-size: 6px 6px, 6px 6px, 6px 6px, 6px 6px, 6px 11px, 6px 11px, 11px 6px, 11px 6px;
+		background-position: 17px 17px, 17px 17px, 17px 17px, 17px 17px, 17px 0, 17px 29px, 0 17px, 29px 17px;
+	}
+
+	66% {
+		background-size: 6px 11px, 6px 11px, 11px 6px, 11px 6px, 0 0, 0 0, 0 0, 0 0;
+		background-position: 17px 6px, 17px 23px, 6px 17px, 23px 17px, 0 0, 0 0, 0 0, 0 0;
+	}
+
+	83% {
+		background-size: 5px 6px, 5px 6px, 6px 5px, 6px 5px, 0 0, 0 0, 0 0, 0 0;
+		background-position: 17px 11px, 17px 22px, 11px 17px, 22px 17px, 0 0, 0 0, 0 0, 0 0;
+	}
+
+	100% {
+		background-size: 6px 6px, 6px 6px, 6px 6px, 6px 6px, 0 0, 0 0, 0 0, 0 0;
+		background-position: 17px 17px, 17px 17px, 17px 17px, 17px 17px, 0 0, 0 0, 0 0, 0 0;
+	}
 }
 
 @keyframes sparkly {
