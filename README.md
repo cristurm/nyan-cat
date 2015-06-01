@@ -21,6 +21,7 @@ To Do List:
 - [x] Fix rainow glitch on various resolutions
 - [x] Add song (with loop)
 - [ ] Improve Performance
+- [ ] Remove JS Sparks Combos (repeat and left movement)
 - [x] Remove JS Sparks
 - [x] Remove JS Rainbow
 - [ ] Remove JS Nyan Cat
