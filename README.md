@@ -11,7 +11,7 @@ Goals:
 ------
 
 1. My main goal with this project is to recreate the Nyan Cat we love using nothing but HTML and CSS3 (HTML5 audio for the background music).
-2. JavaScript is used with jQuery lib mainly to cycle element classes and duplicate some stuff in order to cover the entire screen.
+~~2. JavaScript is used with jQuery lib mainly to cycle element classes and duplicate some stuff in order to cover the entire screen.~~ (-not anymore)
 3. Must be responsive.
 4. Must look exactly like the original Nyan Cat.
 
@@ -21,7 +21,8 @@ To Do List:
 - [x] Fix rainow glitch on various resolutions
 - [x] Add song (with loop)
 - [ ] Improve Performance
-- [ ] Remove JS Sparks Combos (repeat and left movement)
+- [ ] Find a way to verticaly replicate sparks without using JS
+- [x] Remove JS Sparks Combos (repeat and left movement)
 - [x] Remove JS Sparks
 - [x] Remove JS Rainbow
 - [ ] Remove JS Nyan Cat
