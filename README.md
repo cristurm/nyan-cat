@@ -1,11 +1,9 @@
-![Nyan Cat](http://cristurm.com/wp-content/uploads/2013/11/nyan-cat1.png)
-
-nyan-cat
+Nyan Cat
 ========
 
 [DEMO HERE](http://cristurm.github.io/nyan-cat/)
 
-Nyan Cat made with HTML5+CSS3+JavaScript.
+Nyan Cat made with HTML5+CSS3 (and JavaScript :T).
 
 Goals:
 ------
@@ -26,6 +24,7 @@ To Do List:
 - [x] Remove JS Sparks
 - [x] Remove JS Rainbow
 - [ ] Remove JS Nyan Cat
+- [ ] Add parallax effect to the sparks (this will be awesome! :D)
 
 Credits:
 --------
