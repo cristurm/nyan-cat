@@ -1,30 +1,36 @@
-console.log('Nyan!');
-
-var NyanCat = function () {
-	return {
-		init: function () {
-			this.cat = $('#nyan-cat');
-			this.framesAmount = 6;
-			this.currentFrame = 1;
-		},
-
-		cycleFrames: function () {
-			var myself = this;
-			this.cat.removeClass('frame' + myself.currentFrame).addClass('frame' + myself.cycleIds(myself.currentFrame));
-			this.currentFrame = this.cycleIds(this.currentFrame);
-		},
-
-		cycleIds: function (_currId) {
-			if (_currId >= this.framesAmount) {
-				_currId = 1;
-			} else {
-				_currId += 1;
-			}
-
-			return _currId;
-		}
-	}
-}
+var cats = ["america.gif",
+"balloon.gif",
+// "bday.gif",
+"breakfast.gif",
+// "dub.gif",
+// "easter.gif",
+// "elevator.gif",
+// "fiesta.gif",
+"gb.gif",
+// "j5.gif",
+"jamaicnyan.gif",
+"jazz.gif",
+// "manyan.gif",
+// "melon.gif",
+// "mexinyan.gif",
+"mummy.gif",
+"newyear.gif",
+"nyancoin.gif",
+"nyaninja.gif",
+"original.gif",
+// "patty.gif",
+// "pirate.gif",
+"pumpkin.gif",
+"retro.gif",
+"sad.gif",
+"slomo.gif",
+// "star.gif",
+// "tacnayn.gif",
+"technyancolor.gif",
+"vday.gif",
+"wtf.gif",
+// "xmas.gif",
+"zombie.gif"]
 
 var Sparks = function () {
 	return {
@@ -35,7 +41,7 @@ var Sparks = function () {
 
 			for (var a = 0; a < yCombosAmount-1; a += 1) {
 				newCombo = _combo.clone();
-				comboTags.append(newCombo); // <- still have to improve this crap
+				comboTags.append(newCombo);
 			}
 
 			$('body').prepend(comboTags.html());
@@ -44,13 +50,17 @@ var Sparks = function () {
 };
 
 $(function() {
-	var nyancat = new NyanCat(),
-			sparks = new Sparks();
-
-	nyancat.init();
+	var sparks = new Sparks();
 	sparks.init($('.sparks-combo'));
 
-	var timer = setInterval(function () {
-		nyancat.cycleFrames();
-	}, 70);
+	var index = 19; //cuz its the original.
+
+	$(window).click(function() {
+		console.log("TEST");
+		index = ++index % cats.length; 
+		var src = "cats/" + cats[index];
+		console.log(src);
+		$("#nyan-cat").attr("src", src);
+	});
+
 });
