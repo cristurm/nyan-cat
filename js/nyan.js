@@ -53,14 +53,11 @@ $(function() {
 	var sparks = new Sparks();
 	sparks.init($('.sparks-combo'));
 
-	var index = 19; //cuz its the original.
+	var index = 0;
 
 	$(window).click(function() {
-		console.log("TEST");
 		index = ++index % cats.length; 
-		var src = "cats/" + cats[index];
-		console.log(src);
-		$("#nyan-cat").attr("src", src);
+		$("#nyan-cat").attr("src", "cats/" + cats[index]);
 	});
 
 });
