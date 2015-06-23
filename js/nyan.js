@@ -1,36 +1,38 @@
-var cats = ["america.gif",
-"balloon.gif",
-// "bday.gif",
-"breakfast.gif",
-// "dub.gif",
-// "easter.gif",
-// "elevator.gif",
-// "fiesta.gif",
-"gb.gif",
-// "j5.gif",
-"jamaicnyan.gif",
-"jazz.gif",
-// "manyan.gif",
-// "melon.gif",
-// "mexinyan.gif",
-"mummy.gif",
-"newyear.gif",
-"nyancoin.gif",
-"nyaninja.gif",
-"original.gif",
-// "patty.gif",
-// "pirate.gif",
-"pumpkin.gif",
-"retro.gif",
-"sad.gif",
-"slomo.gif",
-// "star.gif",
-// "tacnayn.gif",
-"technyancolor.gif",
-"vday.gif",
-"wtf.gif",
-// "xmas.gif",
-"zombie.gif"]
+var cats = ["america",
+"balloon",
+// "bday",
+// "breakfast",
+// "dub",
+// "easter",
+// "elevator",
+// "fiesta",
+"gb",
+// "j5",
+"jamaicnyan",
+"jazz",
+// "manyan",
+// "melon",
+// "mexinyan",
+"mummy",
+"newyear",
+"nyancoin",
+"nyaninja",
+"original",
+// "patty",
+// "pirate",
+"pumpkin",
+"retro",
+"sad",
+"slomo",
+// "star",
+// "tacnayn",
+"technyancolor",
+"vday",
+"wtf",
+// "xmas",
+"zombie"];
+
+var audioOverrides = new Set(["breakfast", "easter", "melon", "mummy", "nyancoin", "patty","pirate","pumpkin","zombie"]);
 
 var Sparks = function () {
 	return {
@@ -57,7 +59,14 @@ $(function() {
 
 	$(window).click(function() {
 		index = ++index % cats.length; 
-		$("#nyan-cat").attr("src", "cats/" + cats[index]);
+		$("#nyan-cat").attr("src", "cats/" + cats[index] + ".gif");
+		if(!audioOverrides.has(cats[index])) {
+			$("#ogg").attr("src", "audio/" + cats[index] + ".ogg");
+		}
+		else {
+			$("#ogg").attr("src", "audio/original.ogg");
+		}
+		document.getElementById("ogg").load();
 	});
 
 });
