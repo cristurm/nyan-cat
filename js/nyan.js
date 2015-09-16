@@ -1,30 +1,38 @@
-console.log('Nyan!');
+var cats = ["america",
+"balloon",
+// "bday",
+// "breakfast",
+// "dub",
+// "easter",
+// "elevator",
+// "fiesta",
+"gb",
+// "j5",
+"jamaicnyan",
+"jazz",
+// "manyan",
+// "melon",
+// "mexinyan",
+"mummy",
+"newyear",
+"nyancoin",
+"nyaninja",
+"original",
+// "patty",
+// "pirate",
+"pumpkin",
+"retro",
+"sad",
+"slomo",
+// "star",
+// "tacnayn",
+"technyancolor",
+"vday",
+"wtf",
+// "xmas",
+"zombie"];
 
-var NyanCat = function () {
-	return {
-		init: function () {
-			this.cat = $('#nyan-cat');
-			this.framesAmount = 6;
-			this.currentFrame = 1;
-		},
-
-		cycleFrames: function () {
-			var myself = this;
-			this.cat.removeClass('frame' + myself.currentFrame).addClass('frame' + myself.cycleIds(myself.currentFrame));
-			this.currentFrame = this.cycleIds(this.currentFrame);
-		},
-
-		cycleIds: function (_currId) {
-			if (_currId >= this.framesAmount) {
-				_currId = 1;
-			} else {
-				_currId += 1;
-			}
-
-			return _currId;
-		}
-	}
-}
+var audioOverrides = new Set(["breakfast", "easter", "melon", "mummy", "nyancoin", "patty","pirate","pumpkin","zombie"]);
 
 var Sparks = function () {
 	return {
@@ -35,7 +43,7 @@ var Sparks = function () {
 
 			for (var a = 0; a < yCombosAmount-1; a += 1) {
 				newCombo = _combo.clone();
-				comboTags.append(newCombo); // <- still have to improve this crap
+				comboTags.append(newCombo);
 			}
 
 			$('body').prepend(comboTags.html());
@@ -44,13 +52,21 @@ var Sparks = function () {
 };
 
 $(function() {
-	var nyancat = new NyanCat(),
-			sparks = new Sparks();
-
-	nyancat.init();
+	var sparks = new Sparks();
 	sparks.init($('.sparks-combo'));
 
-	var timer = setInterval(function () {
-		nyancat.cycleFrames();
-	}, 70);
+	var index = 0;
+
+	$(window).click(function() {
+		index = ++index % cats.length; 
+		$("#nyan-cat").attr("src", "cats/" + cats[index] + ".gif");
+		if(!audioOverrides.has(cats[index])) {
+			$("#ogg").attr("src", "audio/" + cats[index] + ".ogg");
+		}
+		else {
+			$("#ogg").attr("src", "audio/original.ogg");
+		}
+		document.getElementById("ogg").load();
+	});
+
 });
