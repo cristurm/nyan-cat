@@ -1,0 +1,167 @@
+.sparks-combo {
+	height: 300px;
+	width: 200%;
+	position: relative;
+
+	animation: woosh 700ms 0ms linear infinite both;
+}
+
+.spark {
+	z-index: 1;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	background: linear-gradient(to right, white 0px, white 6px, transparent 6px, transparent 400px) repeat-x,
+							linear-gradient(to right, white 0px, white 6px, transparent 6px, transparent 400px) repeat-x,
+							linear-gradient(to right, white 0px, white 6px, transparent 6px, transparent 400px) repeat-x,
+							linear-gradient(to right, white 0px, white 6px, transparent 6px, transparent 400px) repeat-x;
+
+	&:before {
+		background: linear-gradient(to right, white 0px, white 5px, transparent 5px, transparent 400px) repeat-x,
+								linear-gradient(to right, white 0px, white 5px, transparent 5px, transparent 400px) repeat-x,
+								linear-gradient(to right, white 0px, white 5px, transparent 5px, transparent 400px) repeat-x,
+								linear-gradient(to right, white 0px, white 5px, transparent 5px, transparent 400px) repeat-x;
+	};
+
+	&:after {
+		background: linear-gradient(to right, white 0px, white 6px, transparent 6px, transparent 400px) repeat-x,
+								linear-gradient(to right, white 0px, white 6px, transparent 6px, transparent 400px) repeat-x,
+								linear-gradient(to right, white 0px, white 11px, transparent 11px, transparent 400px) repeat-x,
+								linear-gradient(to right, white 0px, white 11px, transparent 11px, transparent 400px) repeat-x;
+	};
+
+	&:before, &:after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: transparent;
+	}
+
+	&:nth-child(1) {
+		z-index: 3;
+		top: 0;
+		left: 20px;
+
+		animation: sparkly 700ms 0ms steps(1) infinite both;
+
+		&:before { animation: sparkly-before 700ms 0ms steps(1) infinite both; }
+		&:after  { animation: sparkly-after 700ms 0ms steps(1) infinite both; }
+	}
+
+	&:nth-child(2) {
+		top: 40px;
+		left: 170px;
+
+		animation: sparkly 700ms 200ms steps(1) infinite both;
+
+		&:before { animation: sparkly-before 700ms 200ms steps(1) infinite both; }
+		&:after  { animation: sparkly-after 700ms 200ms steps(1) infinite both; }
+	}
+
+	&:nth-child(3) {
+		top: 100px;
+		left: 320px;
+
+		animation: sparkly 700ms 400ms steps(1) infinite both;
+
+		&:before { animation: sparkly-before 700ms 400ms steps(1) infinite both; }
+		&:after  { animation: sparkly-after 700ms 400ms steps(1) infinite both; }
+	}
+
+	&:nth-child(4) {
+		top: 150px;
+		left: 200px;
+
+		animation: sparkly 700ms 600ms steps(1) infinite both;
+
+		&:before { animation: sparkly-before 700ms 600ms steps(1) infinite both; }
+		&:after  { animation: sparkly-after 700ms 600ms steps(1) infinite both; }
+	}
+}
+
+.hidden-background-image() {
+	background-size: 0 0, 0 0, 0 0, 0 0; background-position: 0 0, 0 0, 0 0, 0 0;
+}
+
+@keyframes woosh {
+	0% { left: 0px; }
+	100% { left: -400px; }
+}
+
+@keyframes sparkly {
+	0% {
+		background-size: 400px 6px, 0 0, 0 0, 0 0;
+		background-position: 17px 17px, 0 0, 0 0, 0 0;
+	}
+
+	16% {
+		background-size: 400px 6px, 400px 6px, 400px 6px, 400px 6px;
+		background-position: 17px 0, 34px 17px, 17px 34px, 0 17px;
+	}
+
+	33% {
+		background-size: 400px 6px, 400px 6px, 400px 6px, 400px 6px;
+		background-position: 17px 0, 34px 17px, 17px 34px, 0 17px;
+	}
+
+	50% {
+		background-size: 400px 6px, 0 0, 0 0, 0 0;
+		background-position: 17px 17px, 0 0, 0 0, 0 0;
+	}
+
+	66% {
+		background-size: 400px 11px, 400px 11px, 0 0, 0 0;
+		background-position: 17px 6px, 17px 23px, 0 0, 0 0;
+	}
+
+	83% {
+		background-size: 0 0, 0 0, 400px 5px, 400px 5px;
+		background-position: 0 0, 0 0, 11px 17px, 22px 17px;
+	}
+
+	100% {
+		background-size: 400px 6px, 0 0, 0 0, 0 0;
+		background-position: 17px 17px, 0 0, 0 0, 0 0;
+	}
+}
+
+@keyframes sparkly-before {
+	0% { .hidden-background-image(); }
+	16% { .hidden-background-image(); }
+
+	33% {
+		background-size: 400px 5px, 400px 5px, 400px 5px, 400px 5px;
+		background-position: 6px 6px, 29px 6px, 29px 29px, 6px 29px;
+	}
+
+	50% { .hidden-background-image(); }
+	66% { .hidden-background-image(); }
+
+	83% {
+		background-size: 0 0, 0 0, 400px 5px, 400px 5px;
+		background-position: 0 0, 0 0, 17px 12px, 17px 22px;
+	}
+
+	100% { .hidden-background-image(); }
+}
+
+@keyframes sparkly-after {
+	0% { .hidden-background-image(); }
+	16% { .hidden-background-image(); }
+	33% { .hidden-background-image(); }
+
+	50% {
+		background-size: 400px 11px, 400px 11px, 400px 6px, 400px 6px;
+		background-position: 17px 0, 17px 29px, 0 17px, 29px 17px;
+	}
+
+	66% {
+		background-size: 0 0, 0 0, 400px 6px, 400px 6px;
+		background-position: 0 0, 0 0, 6px 17px, 23px 17px;
+	}
+
+	83% { .hidden-background-image(); }
+	100% { .hidden-background-image(); }
+}

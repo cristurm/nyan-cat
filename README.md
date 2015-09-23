@@ -1,33 +1,30 @@
-![Nyan Cat](http://cristurm.com/wp-content/uploads/2013/11/nyan-cat1.png)
-
-nyan-cat
+Nyan Cat
 ========
 
 [DEMO HERE](http://cristurm.github.io/nyan-cat/)
 
-Nyan Cat made with HTML5+CSS3+JavaScript.
+Nyan Cat made with HTML5+CSS3 (and JavaScript :T).
 
 Goals:
 ------
 
 1. My main goal with this project is to recreate the Nyan Cat we love using nothing but HTML and CSS3 (HTML5 audio for the background music).
-2. JavaScript is used with jQuery lib mainly to cycle element classes and duplicate some stuff in order to cover the entire screen.
+~~2. JavaScript is used with jQuery lib mainly to cycle element classes and duplicate some stuff in order to cover the entire screen.~~ (-not anymore)
 3. Must be responsive.
 4. Must look exactly like the original Nyan Cat.
 
 To Do List:
 -----------
 
-- ~~Fix rainow glitch on various resolutions.~~
-- ~~Add song (with loop).~~
-- Improve Performance.
-- Remove JS for frames cycling
-
-
-Why not use CSS3 Transitions/Animations?
-----------------------------------------
-
-Cause they didn't work well with background-gradoents at the momtent I was making it.
+- [x] Fix rainow glitch on various resolutions
+- [x] Add song (with loop)
+- [ ] Improve Performance
+- [ ] Find a way to verticaly replicate sparks without using JS
+- [x] Remove JS Sparks Combos (repeat and left movement)
+- [x] Remove JS Sparks
+- [x] Remove JS Rainbow
+- [ ] Remove JS Nyan Cat
+- [ ] Add parallax effect to the sparks (this will be awesome! :D)
 
 Credits:
 --------

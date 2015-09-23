@@ -4,30 +4,21 @@
 	<meta charset="UTF-8">
 	<title>Nyan Cat - HTML5+CSS3+JS</title>
 
-	<link rel="stylesheet" href="css/octicons.css"/>
 	<link rel="stylesheet" href="css/nyan.css"/>
-	<link rel="stylesheet" href="css/nyan-head-frames.css"/>
-	<link rel="stylesheet" href="css/nyan-paws-frames.css"/>
-	<link rel="stylesheet" href="css/nyan-tail-frames.css"/>
-	<link rel="stylesheet" href="css/nyan-sparks-frames.css"/>
 </head>
 <body>
-	<div class="sparks-combo" style="left: 0; width: 400px; height: 400px;">
+	<div class="sparks-combo">
 		<div class="spark"></div>
 		<div class="spark"></div>
 		<div class="spark"></div>
 		<div class="spark"></div>
 	</div>
 
-	<div id="rainbow">
-		<div id="wave-1" class="wave-combo top">
-			<div class="wave"></div>
-		</div>
+	<div id="wave-a" class="hot rainbow"></div>
+	<div id="wave-a" class="cold rainbow"></div>
 
-		<div id="wave-2" class="wave-combo bottom">
-			<div class="wave"></div>
-		</div>
-	</div>
+	<div id="wave-b" class="hot rainbow"></div>
+	<div id="wave-b" class="cold rainbow"></div>
 
 	<div id="nyan-cat" class="frame1">
 		<div id="tail"></div>
@@ -44,7 +35,7 @@
 	</div>
 
 	<a href="https://github.com/cristurm/nyan-cat" title="My Github Repo" class="repo">
-		<i class="mega-octicon octicon-mark-github"></i>
+		<i class="octicon octicon-mark-github"></i>
 		<span>My Github Repo</span>
 	</a>
 
@@ -54,12 +45,9 @@
 	</audio>
 
 	<!-- Libs -->
-	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<!-- Nyan Stuff -->
-	<script src="js/nyan-cat.js"></script>
-	<script src="js/nyan-sparks.js"></script>
-	<script src="js/nyan-rainbow.js"></script>
 	<script src="js/nyan.js"></script>
 </body>
 </html>

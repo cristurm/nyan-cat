@@ -1,0 +1,181 @@
+@font-face {
+  font-family: 'octicons';
+  src: url('../font/octicons.eot?#iefix') format('embedded-opentype'),
+       url('../font/octicons.woff') format('woff'),
+       url('../font/octicons.ttf') format('truetype'),
+       url('../font/octicons.svg#octicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+	width:100%;
+	height:100%;
+	margin: 0;
+	padding: 0;
+	background: #036;
+	overflow: hidden;
+}
+
+body {
+	font: 13px/1.4 Helvetica,arial,freesans,clean,sans-serif,"Segoe UI Emoji","Segoe UI Symbol";
+}
+
+.repo {
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: black;
+	background: white;
+	padding: 6px 6px;
+	outline: none;
+	z-index: 4;
+}
+
+.repo i {
+	float: left;
+	cursor: pointer;
+
+}
+
+.repo span {
+	float: left;
+	padding-left: 0;
+	line-height: 32px;
+	overflow: hidden;
+	width: 0;
+	max-width: 0;
+	white-space: nowrap;
+	transition: max-width 1s;
+}
+
+.repo:hover span {
+	padding-left: 6px;
+	width: auto;
+	max-width: 200px;
+}
+
+.octicon {
+  font: normal normal 32px octicons;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+.octicon-mark-github:before { content: '\f00a'}
+
+/* nyan cat! */
+#nyan-cat {
+	position: absolute;
+	width: 194px;
+	height: 122px;
+	top: 50%;
+	left: 50%;
+	margin-top: -60px;
+	margin-left: -97px;
+	z-index: 2;
+}
+
+#nyan-cat.frame1, #nyan-cat.frame2 {
+	margin-top: -54px;
+}
+
+/* pop-tarts body */
+#pop-tarts-body {
+	border: solid black;
+	border-width: 6px 0;
+	width: 97px;
+	height: 92px;
+	position: absolute;
+	left: 52px;
+	top: 0;
+}
+
+#pop-tarts-body:after {
+	content: '';
+	border: solid black;
+	border-width: 0 6px;
+	width: 109px;
+	height: 80px;
+	position: absolute;
+	top: 6px;
+	left: -12px;
+}
+
+#pop-tarts-body:before {
+	content: '';
+	position: absolute;
+	left: -6px;
+	top: 0;
+	width: 109px;
+	height: 92px;
+
+	background: linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat,
+				linear-gradient(black, black) no-repeat;
+	background-color: #fc9;
+	background-size: 6px 6px;
+	background-position: 0 0, 103px 0, 0 86px, 103px 86px;
+}
+
+#pop-tarts-body-cream {
+	position: absolute;
+	width: 100%;
+	height: 80px;
+	top: 6px;
+	left: 0;
+	background: linear-gradient(#f39, #f39) no-repeat,
+				linear-gradient(#f39, #f39) no-repeat,
+				linear-gradient(#f39, #f39) no-repeat,
+				linear-gradient(#f39, #f39) no-repeat,
+				linear-gradient(#f39, #f39) no-repeat,
+				linear-gradient(#f39, #f39) no-repeat,
+				linear-gradient(#f39, #f39) no-repeat,
+				linear-gradient(#f39, #f39) no-repeat,
+				linear-gradient(#f39, #f39) no-repeat,
+				linear-gradient(#f39, #f39) no-repeat;
+
+	background-color: #f9f;
+	background-size: 6px 6px;
+	background-position: 12px 12px, 40px 6px, 58px 6px, 35px 29px, 80px 18px, 18px 40px, 40px 46px, 6px 52px, 29px 63px;
+}
+
+#pop-tarts-body-cream:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+
+	background: linear-gradient(#fc9, #fc9) no-repeat,
+				linear-gradient(#fc9, #fc9) no-repeat,
+				linear-gradient(#fc9, #fc9) no-repeat,
+				linear-gradient(#fc9, #fc9) no-repeat,
+				linear-gradient(#fc9, #fc9) no-repeat,
+				linear-gradient(#fc9, #fc9) no-repeat,
+				linear-gradient(#fc9, #fc9) no-repeat,
+				linear-gradient(#fc9, #fc9) no-repeat;
+	background-size: 12px 6px, 12px 6px, 12px 6px, 12px 6px, 6px 12px, 6px 12px, 6px 12px, 6px 12px;
+	background-position: 0 0, 85px 0, 0 74px, 85px 74px, 0 0, 91px 0, 0 68px, 91px 68px;
+}
+
+/* pseudo elems */
+#head:before, #head:after, #tail:before, #nyan-cat:before, #paws:before, #face:before {
+	content: '';
+	position: absolute;
+}
+
+@import "nyan-sparks.less";
+@import "nyan-rainbow.less";
+@import "nyan-head.less";
+@import "nyan-paws.less";
+@import "nyan-tail.less";
