@@ -18,7 +18,7 @@ var NyanCat = function () {
 			if (_currId >= this.framesAmount) {
 				_currId = 1;
 			} else {
-				_currId += 1;
+				_currId++;
 			}
 
 			return _currId;
@@ -33,7 +33,7 @@ var Sparks = function () {
 					comboTags = $(document.createElement('div')),
 					newCombo = null;
 
-			for (var a = 0; a < yCombosAmount-1; a += 1) {
+			for (var a = 0; a < yCombosAmount-1; a++) {
 				newCombo = _combo.clone();
 				comboTags.append(newCombo); // <- still have to improve this crap
 			}
