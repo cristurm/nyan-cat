@@ -21,12 +21,6 @@ body {
 	font: 13px/1.4 Helvetica,arial,freesans,clean,sans-serif,"Segoe UI Emoji","Segoe UI Symbol";
 }
 
-body > div {
-	width: 100%;
-	height: 400px;
-	position: relative;
-}
-
 .repo {
 	position: absolute;
 	top: 0;
@@ -35,6 +29,7 @@ body > div {
 	background: white;
 	padding: 6px 6px;
 	outline: none;
+	z-index: 4;
 }
 
 .repo i {
@@ -85,6 +80,7 @@ body > div {
 	left: 50%;
 	margin-top: -60px;
 	margin-left: -97px;
+	z-index: 2;
 }
 
 #nyan-cat.frame1, #nyan-cat.frame2 {
