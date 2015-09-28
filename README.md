@@ -9,7 +9,6 @@ Goals:
 ------
 
 1. My main goal with this project is to recreate the Nyan Cat we love using nothing but HTML and CSS3 (HTML5 audio for the background music).
-~~2. JavaScript is used with jQuery lib mainly to cycle element classes and duplicate some stuff in order to cover the entire screen.~~ (-not anymore)
 3. Must be responsive.
 4. Must look exactly like the original Nyan Cat.
 
