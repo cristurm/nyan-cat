@@ -3,7 +3,7 @@ Nyan Cat
 
 [DEMO HERE](http://cristurm.github.io/nyan-cat/)
 
-Nyan Cat made with HTML5+CSS3 (and JavaScript :T).
+Nyan Cat made with HTML5+CSS3+JavaScript.
 
 Goals:
 ------
