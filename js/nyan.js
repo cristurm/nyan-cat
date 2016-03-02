@@ -54,3 +54,24 @@ $(function() {
 		nyancat.cycleFrames();
 	}, 70);
 });
+
+function toggleAudio() {
+	var audio = $("#nyan-sound")[0];
+	if (audio.paused) {
+		audio.play();
+		toggleAudioIcon()
+	} else {
+		audio.pause();
+		toggleAudioIcon()
+	}
+}
+
+function toggleAudioIcon() {
+	if ($('#audio-button-icon').hasClass('glyphicon-volume-off')) {
+		$('#audio-button-icon').removeClass('glyphicon-volume-off');
+		$('#audio-button-icon').addClass('glyphicon-volume-up');
+	} else {
+		$('#audio-button-icon').removeClass('glyphicon-volume-up');
+		$('#audio-button-icon').addClass('glyphicon-volume-off');
+	}
+}
