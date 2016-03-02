@@ -3,10 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Nyan Cat - HTML5+CSS3+JS</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
 
 	<link rel="stylesheet" href="css/nyan.css"/>
 </head>
 <body>
+	<a id="audio-button" class="btn btn-default audio-button" alt="toggle audio" onclick="toggleAudio()">
+       <span id="audio-button-icon" class="glyphicon glyphicon glyphicon glyphicon-volume-up" aria-hidden="true"></span>
+    </a>
 	<div class="sparks-combo">
 		<div class="spark"></div>
 		<div class="spark"></div>
@@ -39,14 +43,14 @@
 		<span>My Github Repo</span>
 	</a>
 
-	<audio autoplay="true" loop="true">
+	<audio id="nyan-sound" autoplay loop>
 		<source src="audio/nyan-cat.ogg" type="audio/ogg" />
 		<source src="audio/nyan-cat.mp3" type="audio/mpeg" />
 	</audio>
 
 	<!-- Libs -->
-	<script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
-	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<!-- Nyan Stuff -->
 	<script src="js/nyan.js"></script>
 </body>
