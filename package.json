@@ -1,0 +1,29 @@
+{
+  "name": "nyan-cat",
+  "version": "1.0.0",
+  "description": "Nyan!",
+  "main": "index.html",
+  "scripts": {
+    "less": "lessc less/nyan.less css/nyan.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cristurm/nyan-cat.git"
+  },
+  "keywords": [
+    "nyan-cat",
+    "css3",
+    "html5",
+    "audio",
+    "animation"
+  ],
+  "author": "Cristina Sturm (cristurm90@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cristurm/nyan-cat/issues"
+  },
+  "homepage": "https://github.com/cristurm/nyan-cat#readme",
+  "devDependencies": {
+    "less": "^3.10.3"
+  }
+}
