@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/cristurm/nyan-cat#readme",
   "devDependencies": {
-    "less": "^3.10.3"
+    "less": "^3.12.2"
   }
 }
