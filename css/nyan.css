@@ -141,16 +141,27 @@ body {
   position: absolute;
 }
 .sparks-combo {
-  height: 300px;
+  height: 100%;
   width: 200%;
-  position: relative;
-  animation: woosh 700ms 0ms linear infinite both;
+  position: absolute;
+ /*SET DISPLAY FLEX ON CONTAINER*/
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: column wrap;
+  flex-flow: column wrap;
 }
+
 .spark {
   z-index: 1;
-  position: absolute;
+  position: relative;
   width: 100%;
-  height: 100%;
+  height: 25%;
   background-color: transparent;
   background: linear-gradient(to right, white 0px, white 6px, transparent 6px, transparent 400px) repeat-x, linear-gradient(to right, white 0px, white 6px, transparent 6px, transparent 400px) repeat-x, linear-gradient(to right, white 0px, white 6px, transparent 6px, transparent 400px) repeat-x, linear-gradient(to right, white 0px, white 6px, transparent 6px, transparent 400px) repeat-x;
 }
@@ -164,58 +175,75 @@ body {
 .spark:after {
   content: '';
   position: absolute;
-  width: 100%;
-  height: 100%;
   background-color: transparent;
 }
-.spark:nth-child(1) {
+
+.spark:nth-child(4n) {
   z-index: 3;
-  top: 0;
   left: 20px;
   animation: sparkly 700ms 0ms steps(1) infinite both;
 }
-.spark:nth-child(1):before {
+.spark:nth-child(4n):before {
   animation: sparkly-before 700ms 0ms steps(1) infinite both;
 }
-.spark:nth-child(1):after {
+.spark:nth-child(4n):after {
   animation: sparkly-after 700ms 0ms steps(1) infinite both;
 }
-.spark:nth-child(2) {
-  top: 40px;
+.spark:nth-child(4n+1) {
   left: 170px;
   animation: sparkly 700ms 200ms steps(1) infinite both;
 }
-.spark:nth-child(2):before {
+.spark:nth-child(4n+1):before {
   animation: sparkly-before 700ms 200ms steps(1) infinite both;
 }
-.spark:nth-child(2):after {
+.spark:nth-child(4n+1):after {
   animation: sparkly-after 700ms 200ms steps(1) infinite both;
 }
-.spark:nth-child(3) {
-  top: 100px;
+.spark:nth-child(4n+2) {
   left: 320px;
   animation: sparkly 700ms 400ms steps(1) infinite both;
 }
-.spark:nth-child(3):before {
+.spark:nth-child(4n+2):before {
   animation: sparkly-before 700ms 400ms steps(1) infinite both;
 }
-.spark:nth-child(3):after {
+.spark:nth-child(4n+2):after {
   animation: sparkly-after 700ms 400ms steps(1) infinite both;
 }
-.spark:nth-child(4) {
-  top: 150px;
+.spark:nth-child(4n+3) {
   left: 200px;
   animation: sparkly 700ms 600ms steps(1) infinite both;
 }
-.spark:nth-child(4):before {
+.spark:nth-child(4n+3):before {
   animation: sparkly-before 700ms 600ms steps(1) infinite both;
 }
-.spark:nth-child(4):after {
+.spark:nth-child(4n+3):after {
   animation: sparkly-after 700ms 600ms steps(1) infinite both;
 }
+
+.sparks-moving {
+  position: relative;
+  width:100%;
+  height:20%;
+}
+.sparks-moving:nth-child(1) {
+  animation:woosh 5000ms 0ms linear infinite both;
+}
+.sparks-moving:nth-child(2) {
+  animation:woosh 3000ms 0ms linear infinite both;
+}
+.sparks-moving:nth-child(3) {
+  animation:woosh 2000ms 0ms linear infinite both;
+}
+.sparks-moving:nth-child(4) {
+  animation:woosh 1000ms 0ms linear infinite both;
+}
+.sparks-moving:nth-child(5) {
+  animation:woosh 500ms 0ms linear infinite both;
+}
+
 @keyframes woosh {
   0% {
-    left: 0px;
+    left: 0;
   }
   100% {
     left: -400px;
